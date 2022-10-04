@@ -1,0 +1,22 @@
+dosseg
+.model small
+.stack 100h
+.data
+myArray db 'A','b','d','u','l',' ','R','e','h','m','a','n'
+.code
+Main proc
+Mov ax, @data
+Mov ds, ax
+Mov si, offset myArray
+
+Mov cx, 12
+
+L01:
+Mov dx, [si]
+Mov ah, 2
+INT 21h
+Inc si
+
+Loop L01
+Mov ah, 4ch
+Int 21h

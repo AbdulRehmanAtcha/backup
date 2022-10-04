@@ -1,0 +1,119 @@
+Q1 : Print two different strings on two different lines.
+
+dosseg
+.model small
+.stack 100h
+.data
+msg1 db 'Hello$'
+msg2 db 'World$'
+.code
+Main proc
+Mov ax, @data
+Mov ds, ax
+Mov dx, offset msg1
+Mov ah, 9
+INT 21h
+Mov dx, 13
+Mov ah, 2
+INT 21h
+Mov dx, 10
+Mov ah, 2
+INT 21h
+Mov dx, offset msg2
+Mov ah, 9
+INT 21h
+Mov ah, 4ch
+INT 21h
+Main endp
+End Main
+
+
+Q2: Create code as discussed in class.
+
+dosseg
+
+.model small
+
+.stack 100h
+
+.data
+
+message1 db 'Enter First Number: $'
+
+message2 db 'Enter Second Number: $'
+message3 db 'The Sum Is: $'
+
+.code
+
+Main proc
+
+Mov ax, @data
+
+Mov ds, ax
+
+Mov dx, offset message1
+
+Mov ah, 9
+
+INT 21h
+
+Mov ah, 1
+
+INT 21h
+
+Mov bl, al
+
+Mov dx, 10
+
+Mov ah, 2
+
+INT 21h
+
+Mov dx, 13
+
+Mov ah, 2
+
+INT 21h
+
+Mov dx, offset message2
+
+Mov ah, 9
+
+INT 21h
+
+Mov ah, 1
+
+INT 21h
+
+ADD bl, al
+
+SUB bl, 48
+
+Mov dx, 10
+
+Mov ah, 2
+
+INT 21h
+
+Mov dx, 13
+
+Mov ah, 2
+
+INT 21h
+Mov dx, offset message3
+Mov ah, 9
+INT 21h
+
+Mov dl, bl
+
+Mov ah, 2
+
+INT 21h
+
+Mov ah, 4ch
+
+INT 21h
+
+Main endp
+
+End Main

@@ -1,0 +1,57 @@
+1: Loop Assignment
+
+dosseg
+.model small
+.stack 100H
+.data
+.code
+Main proc
+Mov Cx, 10
+Mov dx, 48
+
+LO1:
+Mov ah, 2
+INT 21h
+
+Inc dx
+
+LOOP LO1
+Mov ah, 4ch
+INT 21h
+Main endp
+End Main
+
+
+
+2: Mam I am trying to print every number in a new line but it is printing(some shape) in ever different  line except 0 with the following code.
+
+dosseg
+.model small
+.stack 100H
+.data
+.code
+Main proc
+Mov Cx, 10
+Mov dx, 48
+
+LO1:
+Mov ah, 2
+INT 21h
+
+Mov dx, 13
+Mov ah, 2
+INT 21h
+
+Mov dx, 10
+Mov ah, 2
+INT 21h
+
+
+
+Inc dx
+
+LOOP LO1
+Mov ah, 4ch
+INT 21h
+Main endp
+End Main

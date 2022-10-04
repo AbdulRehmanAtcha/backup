@@ -1,0 +1,27 @@
+dosseg
+.model small
+.stack 100h
+.data
+myInput db 100 dup('$')
+
+.code
+Main proc
+Mov ax, @data
+Mov ds, ax
+Mov si, offset myInput
+
+L01:
+Mov ah, 1
+INT 21h
+cmp al, 13
+je programend
+mov [si], al
+Inc si
+jmp L01
+programend:
+
+Mov dx, offset myInput
+Mov ah, 9
+INT 21h
+Main endp
+End Main

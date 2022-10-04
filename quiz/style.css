@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.conatiner{
+    background: url(./images/main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(87, 83, 83);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    /* z-index: -1; */
+}
+body{
+    overflow: hidden;
+}
+.html, .css, .js, .all{
+    width: 250px;
+    height: 250px;
+    /* background: linear-gradient(to right,rgb(226, 220, 220),rgb(204, 192, 192)); */
+    background-color: rgb(247, 231, 231);
+    border-radius: 5px;
+    box-shadow: -3px 2px 3px rgb(122 117 117);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(88, 84, 84);
+    font-family: 'Acme', sans-serif;
+}
+.html button, .css button, .js button, .all button{
+    font-family: 'Abril Fatface', cursive;
+    height: 40px;
+    width: 70px;
+    font-size: 22px;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: rgb(46, 42, 42);
+    border: 1px solid grey;
+    color: aliceblue;
+    transition: background 0.8s ease-in;
+}
+.html button:hover, .css button:hover, .js button:hover, .all button:hover{
+    background-color: whitesmoke;
+    color: rgb(53, 50, 50);
+}
