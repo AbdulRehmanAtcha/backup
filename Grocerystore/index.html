@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Google -
+        Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Prosymbols -
+        Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/location-pin" title="location pin icons">Location pin icons created by
+        Pixel perfect - Flaticon</a> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf949f21ea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <!-- Header Strats -->
+    <div class="header">
+        <div class="header-left">
+            <img src="./icons/shopping-bag.png">
+            <h2>Groco</h2>
+        </div>
+        <div class="header-mid">
+            <ul>
+                <li><a href="#home" onmouseover="this.style.color= 'orange' "
+                        onmouseout="this.style.color= 'black' ">Home</a></li>
+                <li><a href="#products" onmouseover="this.style.color= 'orange' "
+                        onmouseout="this.style.color= 'black' ">Products</a></li>
+                <li><a href="#cat" onmouseover="this.style.color= 'orange' "
+                        onmouseout="this.style.color= 'black' ">Categories</a></li>
+                <li><a href="#features" onmouseover="this.style.color= 'orange' "
+                        onmouseout="this.style.color= 'black' ">Features</a></li>
+                <li><a href="#review" onmouseover="this.style.color= 'orange' "
+                        onmouseout="this.style.color= 'black' ">Review</a></li>
+                <li><a href="#blog" onmouseover="this.style.color= 'orange' "
+                        onmouseout="this.style.color= 'black'">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <div class="search" style="display: flex; align-items: center; justify-content: center;">
+                <img src="./icons/search.png" style="width: 20px; height: 20px;">
+            </div>
+            <div class="cart" style="display: flex; align-items: center; justify-content: center;">
+                <img src="./icons/shopping-cart.png" style="width: 25px; height: 25px;">
+            </div>
+            <div class="user" style="display: flex; align-items: center; justify-content: center;">
+                <img src="./icons/user.png" style="width: 25px; height: 25px;">
+            </div>
+        </div>
+    </div>
+    <!-- Header Ends -->
+    <!-- Home Starts -->
+    <div class="home" id="home">
+        <div class="home-text">
+            <h2>Fresh & <span style="color: orange;">Organic</span> Products For You</h2>
+            <p>Shop at Groco <br> for fresh produce and great specials on groceries</p>
+            <button id="more" onClick="showMore()">Show More</button>
+            <p style="text-align: center; width: 100%;" id="extra-para">Groco is an online grocery store that allows online ordering. <br>We have all variety of fresh fruits, vegetables & meat. <br> All your orders will be delivered within 8 hours.</p>
+            <button id="less" onClick="showLess()">Show Less</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Home Ends -->
+    <!-- Products Start -->
+    <div class="products"id="products">
+        <div class="products-heading"
+            style="display: flex; justify-content: center; column-gap: 8px; font-family: 'Roboto Slab', serif;">
+            <h2 style="font-size: 40px;">Our </h2>
+            <div class="products-heading-box">
+                <h2 style="font-size: 40px; color: aliceblue;">Products</h2>
+            </div>
+        </div>
+        <br>
+        <div class="product-items" >
+            <div class="products-line1">
+                <div class="products-line1-left">
+                    <img src="./images/product-1.png" style="height: 250px; width: 250px;">
+                    <h2 style="margin-bottom: 25px;">Fresh Orange</h2>
+                    <h3 style="margin-bottom: 25px;">$4.99 - $10.99</h3>
+                    <div class="products-line1-left-icons" style="margin-bottom: 25px;">
+                        <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/rating.png"
+                            style="height: 20px; width: 20px;">
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="products-line1-mid">
+                    <img src="./images/product-2.png" style="height: 250px; width: 250px;">
+                    <h2 style="margin-bottom: 25px;">Fresh Onion</h2>
+                    <h3 style="margin-bottom: 25px;">$4.99 - $10.99</h3>
+                    <div class="products-line1-mid-icons" style="margin-bottom: 25px;">
+                        <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/rating.png"
+                            style="height: 20px; width: 20px;">
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="products-line1-right">
+                    <img src="./images/product-3.png" style="height: 250px; width: 250px;">
+                    <h2 style="margin-bottom: 25px;">Fresh Meat</h2>
+                    <h3 style="margin-bottom: 25px;">$4.99 - $10.99</h3>
+                    <div class="products-line1-right-icons" style="margin-bottom: 25px;">
+                        <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/rating.png"
+                            style="height: 20px; width: 20px;">
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <br>
+            <div class="products-line2">
+                <div class="products-line2-left">
+                    <img src="./images/product-4.png" style="height: 250px; width: 250px;">
+                    <h2 style="margin-bottom: 25px;">Fresh Cabbage</h2>
+                    <h3 style="margin-bottom: 25px;">$4.99 - $10.99</h3>
+                    <div class="products-line1-left-icons" style="margin-bottom: 25px;">
+                        <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/rating.png"
+                            style="height: 20px; width: 20px;">
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="products-line2-mid">
+                    <img src="./images/product-5.png" style="height: 250px; width: 250px;">
+                    <h2 style="margin-bottom: 25px;">Fresh Potato</h2>
+                    <h3 style="margin-bottom: 25px;">$4.99 - $10.99</h3>
+                    <div class="products-line1-mid-icons" style="margin-bottom: 25px;">
+                        <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/rating.png"
+                            style="height: 20px; width: 20px;">
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="products-line2-right">
+                    <img src="./images/product-6.png" style="height: 250px; width: 250px;">
+                    <h2 style="margin-bottom: 25px;">Fresh Avocado</h2>
+                    <h3 style="margin-bottom: 25px;">$4.99 - $10.99</h3>
+                    <div class="products-line1-right-icons" style="margin-bottom: 25px;">
+                        <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/rating.png"
+                            style="height: 20px; width: 20px;">
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <br>
+            <div class="products-line3">
+                <div class="products-line3-left">
+                    <img src="./images/product-7.png" style="height: 250px; width: 250px;">
+                    <h2 style="margin-bottom: 25px;">Fresh Carrot</h2>
+                    <h3 style="margin-bottom: 25px;">$4.99 - $10.99</h3>
+                    <div class="products-line1-left-icons" style="margin-bottom: 25px;">
+                        <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/rating.png"
+                            style="height: 20px; width: 20px;">
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="products-line3-mid">
+                    <img src="./images/product-8.png" style="height: 250px; width: 250px;">
+                    <h2 style="margin-bottom: 25px;">Fresh Lemon</h2>
+                    <h3 style="margin-bottom: 25px;">$4.99 - $10.99</h3>
+                    <div class="products-line1-mid-icons" style="margin-bottom: 25px;">
+                        <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/rating.png"
+                            style="height: 20px; width: 20px;">
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="products-line3-right">
+                    <img src="./images/cart-img-1.png" style="height: 236px; width: 236px;">
+                    <h2 style="margin-bottom: 25px;">Fresh Watermelon</h2>
+                    <h3 style="margin-bottom: 25px;">$4.99 - $10.99</h3>
+                    <div class="products-line1-mid-icons" style="margin-bottom: 25px;">
+                        <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                            style="height: 20px; width: 20px;"><img src="./icons/rating.png"
+                            style="height: 20px; width: 20px;">
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Product End -->
+    <!-- Categories Start -->
+    <div class="categories" id="cat">
+        <div class="categories-heading"
+            style="display: flex; justify-content: center; column-gap: 8px; font-family: 'Roboto Slab', serif;">
+            <h2>Our </h2>
+            <div class="categories-heading-box">
+                <h2 style="color: aliceblue;">Categories</h2>
+            </div>
+        </div>
+        <br>
+        <div class="categories-line1" >
+            <div class="categories-line1-first">
+                <img src="./images/cat-1.png" height="145px" width="245px">
+                <h2>Organic Vegetables</h2>
+                <h3>Upto 25% Off</h3>
+                <button>Read More</button>
+            </div>
+            <div class="categories-line1-second">
+                <img src="./images/cat-2.png" height="145px" width="245px">
+                <h2>Fresh Fruits</h2>
+                <h3>Upto 30% Off</h3>
+                <button>Read More</button>
+            </div>
+            <div class="categories-line1-third">
+                <img src="./images/cat-3.png" height="145px" width="245px">
+                <h2>Dairy Products</h2>
+                <h3>Upto 15% Off</h3>
+                <button>Read More</button>
+            </div>
+            <div class="categories-line1-fourth">
+                <img src="./images/cat-4.png" height="145px" width="245px">
+                <h2>Fresh Meat</h2>
+                <h3>Upto 07% Off</h3>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Categories Ends-->
+    <!-- Features Starts -->
+    <div class="features" id="features">
+        <div class="features-heading"
+            style="display: flex; justify-content: center; column-gap: 8px; font-family: 'Roboto Slab', serif;">
+            <h2 style="font-size: 40px;">Our </h2>
+            <div class="features-heading-box">
+                <h2 style="font-size: 40px; color: aliceblue;">Features</h2>
+            </div>
+        </div>
+        <br>
+        <div class="features-line1" >
+            <div class="features-line1-left">
+                <img src="./images/feature-img-1.png" style="height: 145px; width: 245px;">
+                <h2>Fresh and Organic</h2>
+                <h3>It is difficult to get organic food at most restaurants, so when possible, eat at home and order
+                    through <b>Groco.</b></h3>
+                <button>Read More</button>
+            </div>
+            <div class="features-line1-mid">
+                <img src="./images/feature-img-2.png" style="height: 145px; width: 245px;">
+                <h2>Free Delivery</h2>
+                <h3>Did Someone Say FREE Delivery? <br>Groco replies OK!</h3>
+                <button>Read More</button>
+            </div>
+            <div class="features-line1-right">
+                <img src="./images/feature-img-3.png" style="height: 145px; width: 245px;">
+                <h2>Easy Payments</h2>
+                <h3>It is difficult to get organic food at most restaurants, so when possible, eat at home and order
+                    through<b>Groco.</b></h3>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Features Ends -->
+    <!-- Review Starts -->
+    
+    <div class="review" id="review">
+        <div class="review-heading"
+            style="display: flex; justify-content: center; column-gap: 8px; font-family: 'Roboto Slab', serif;">
+            <h2>Customer's </h2>
+            <div class="review-heading-box">
+                <h2 style="color: aliceblue;">Review</h2>
+            </div>
+        </div>
+        <br>
+        <div class="review-line1">
+            <div class="review-line1-first">
+                <img src="./images/pic-2.png" style="height: 130px; width: 130px; border-radius: 50%;">
+                <h3>Me and my family ordering almost 2 years from Groco. It's easy to order online. Finding the
+                    delicious foods and goods wich I very much missing in UK.</h3>
+                <h2>Amelia Knight</h2>
+                <div class="review-line1-first-icons">
+                    <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;">
+                </div>
+            </div>
+            <div class="review-line1-second">
+                <img src="./images/pic-1.png" style="height: 130px; width: 130px; border-radius: 50%;">
+                <h3>Amazing service. I ordered late in the day and it came the very next day. It was very reasonably
+                    priced and there was even a couple of complimentary products.</h3>
+                <h2>Robert Parker</h2>
+                <div class="review-line1-second-icons">
+                    <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;">
+                </div>
+            </div>
+            <div class="review-line1-third">
+                <img src="./images/pic-3.png" style="height: 130px; width: 130px; border-radius: 50%;">
+                <h3>Ordered several items before new year's eve, everything received well but unfortunately too late. I
+                    understand that delays could happen around busy times.</h3>
+                <h2>Martin Grove</h2>
+                <div class="review-line1-third-icons">
+                    <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/rating.png"
+                        style="height: 20px; width: 20px;">
+                </div>
+            </div>
+            <div class="review-line1-fourth">
+                <img src="./images/pic-4.png" style="height: 130px; width: 130px; border-radius: 50%;">
+                <h3>Quality of the foods and beverages were good. Well safe packaging. Longer time of expiration date
+                    for the food compare to other online groceries and fast delivery.</h3>
+                <h2>Harper Wyatt</h2>
+                <div class="review-line1-fourth-icons">
+                    <img src="./icons/star.png" style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/star.png"
+                        style="height: 20px; width: 20px;"><img src="./icons/rating.png"
+                        style="height: 20px; width: 20px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Review Ends -->
+    <!-- Blos Starts -->
+    <div class="blogs" id="blog">
+        <div class="blogs-heading"
+            style="display: flex; justify-content: center; column-gap: 8px; font-family: 'Roboto Slab', serif;">
+            <h2 style="font-size: 40px;">Our</h2>
+            <div class="blogs-heading-box">
+                <h2 style="font-size: 40px; color: aliceblue;">Blogs</h2>
+            </div>
+        </div>
+        <br>
+        <div class="blogs-line1">
+            <div class="blogs-line1-left">
+                <div class="blogs-line1-left-background"></div>
+                <br>
+                <hr>
+                <div class="blogs-line1-left-head">
+                    <div class="blogs-line1-left-head-left" style="display: flex;">
+                        <p style="color: #ff7800; font-weight: bolder;"><img src="./icons/user (2).png"
+                                style="height: 12px; width: 12px;"> By Admin</p>
+                    </div>
+                    <div class="blogs-line1-left-head-right" style="display: flex;">
+                        <img src="./icons/calendar.png"
+                            style="height: 12px; width: 12px; position: relative; top: 3px; right: 2px;">
+                        <p style="color: #ff7800; font-weight: bolder;">2nd May, 2022</p>
+                    </div>
+                </div>
+                <h2 style="position: relative; left: 5px; top: 10px;">Fresh Fruits & Vegetables</h2>
+                <h3 style="position: relative; left: 5px; top: 10px;">Fresh vegetables & fruits are the basic
+                    requirements that help in promoting good health. A healthy diet should initiate with fresh
+                    vegetables.</h3>
+            </div>
+            <div class="blogs-line1-mid">
+                <div class="blogs-line1-mid-background"></div>
+                <br>
+                <hr>
+                <div class="blogs-line1-mid-head">
+                    <div class="blogs-line1-mid-head-left" style="display: flex;">
+                        <p style="color: #ff7800; font-weight: bolder;"><img src="./icons/user (2).png"
+                                style="height: 12px; width: 12px;"> By Admin</p>
+                    </div>
+                    <div class="blogs-line1-mid-head-right" style="display: flex;">
+                        <img src="./icons/calendar.png"
+                            style="height: 12px; width: 12px; position: relative; top: 3px; right: 2px;">
+                        <p style="color: #ff7800; font-weight: bolder;">30th May, 2022</p>
+                    </div>
+                </div>
+                <h2 style="position: relative; left: 5px; top: 10px;">Organic Fruits & Vegetables</h2>
+                <h3 style="position: relative; left: 5px; top: 10px;">Organic food is often fresher.Organic produce is
+                    sometimes (but not always, so watch where it is from) produced on smaller farms nearer to where it
+                    is sold.</h3>
+            </div>
+            <div class="blogs-line1-right">
+                <div class="blogs-line1-right-background"></div>
+                <br>
+                <hr>
+                <div class="blogs-line1-right-head">
+                    <div class="blogs-line1-right-head-left" style="display: flex;">
+                        <p style="color: #ff7800; font-weight: bolder;"><img src="./icons/user (2).png"
+                                style="height: 12px; width: 12px;"> By Admin</p>
+                    </div>
+                    <div class="blogs-line1-right-head-right" style="display: flex;">
+                        <img src="./icons/calendar.png"
+                            style="height: 12px; width: 12px; position: relative; top: 3px; right: 2px;">
+                        <p style="color: #ff7800; font-weight: bolder;">21st June, 2022</p>
+                    </div>
+                </div>
+                <h2 style="position: relative; left: 5px; top: 10px;">Healthy Food</h2>
+                <h3 style="position: relative; left: 5px; top: 10px;">Healthy food contains all the elements necessary
+                    for our body, such as proteins, vitamins, fats, and carbohydrates.Healthy food is a need of our
+                    body.</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Ends -->
+    <br>
+    <br>
+    <div class="footer">
+        <div class="footer-line1">
+            <div class="footer-line1-first">
+                <div class="footer-line1-first-head" style="display: flex;">
+                    <h2>Groco </h2><img src="./icons/shopping-bag.png" style="height: 25px; width: 25px;">
+                </div>
+                <div class="footer-line1-first-content">
+                    <h3>A complete place for the complete shopping. Convenient <br> products in lower quality.</h3>
+                </div>
+                <br>
+                <div class="footer-line1-first-icons" style="display: flex; justify-content: space-around;">
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/arehman9091" target="_blank"><img
+                                src="./icons/facebook-app-symbol.png"
+                                style="height: 30px; width: 45px; margin-top: 2px;"></a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/abdulrehmanzaid/" target="_blank"><img
+                                src="./icons/instagram.png" style="height: 35px; width: 35px;"></a>
+                    </div>
+                    <div class="git">
+                        <a href="https://github.com/AbdulRehmanAtcha" target="_blank"><img src="./icons/github.png"
+                                style="height: 35px; width: 35px;"></a>
+                    </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/abdul-rehman-1b8a69230/" target="_blank"><img
+                                src="./icons/linkedin.png" style="height: 30px; width: 30px;"></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="footer-line1-second">
+                <div class="footer-line1-second-head">
+                    <h2>Contact Info</h2>
+                </div>
+                <div class="footer-line1-second-content">
+                    <div class="footer-line1-second-content-line1"
+                        style="display: flex; column-gap: 3px; margin-left: 80px; margin-top: 4px;">
+                        <img src="./icons/old-typical-phone.png" style="height: 25px; width: 25px; margin-top: 4px;">
+                        <h3>021-340-144-10</h3>
+                    </div>
+                    <div class="footer-line1-second-content-line2"
+                        style="display: flex; column-gap: 3px; margin-left: 80px; margin-top: 8px;">
+                        <img src="./icons/phone-call.png" style="height: 25px; width: 25px; margin-top: 4px;">
+                        <h3>0324- 8296883</h3>
+                    </div>
+                    <div class="footer-line1-second-content-line3"
+                        style="display: flex; column-gap: 3px; margin-left: 80px; margin-top: 8px;">
+                        <img src="./icons/envelope.png" style="height: 25px; width: 25px; margin-top: 4px;">
+                        <h3>abdulrehman1239091@gmail.com</h3>
+                    </div>
+                    <div class="footer-line1-second-content-line4"
+                        style="display: flex; column-gap: 3px; margin-left: 78px; margin-top: 8px;">
+                        <img src="./icons/location.png" style="height: 25px; width: 25px; margin-top: 4px;">
+                        <h3>Karachi, Pakistan</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line1-third">
+                <div class="footer-line1-second-head">
+                    <h2>Quick Links</h2>
+                </div>
+                <div class="footer-line1-third-content" style="display: flex; flex-direction: column; row-gap: 10px;">
+                    <div class="footer-line1-third-content-line1" style="display: flex; flex-direction: row;">
+                        <img src="./icons/right-arrow.png"
+                            style="height: 25px; width: 25px; font-weight: bolder; margin-left: 110px; margin-top: 7px;">
+                        <a href="" style="text-decoration: none;">
+                            <h3>Home</h3>
+                        </a>
+                    </div>
+                    <div class="footer-line1-third-content-line2" style="display: flex; flex-direction: row;">
+                        <img src="./icons/right-arrow.png"
+                            style="height: 25px; width: 25px; font-weight: bolder; margin-left: 110px; margin-top: 7px;">
+                        <a href="" style="text-decoration: none;">
+                            <h3>Products</h3>
+                        </a>
+                    </div>
+                    <div class="footer-line1-third-content-line3" style="display: flex; flex-direction: row;">
+                        <img src="./icons/right-arrow.png"
+                            style="height: 25px; width: 25px; font-weight: bolder; margin-left: 110px; margin-top: 7px;">
+                        <a href="" style="text-decoration: none;">
+                            <h3>Categories</h3>
+                        </a>
+                    </div>
+                    <div class="footer-line1-third-content-line4" style="display: flex; flex-direction: row;">
+                        <img src="./icons/right-arrow.png"
+                            style="height: 25px; width: 25px; font-weight: bolder; margin-left: 110px; margin-top: 7px;">
+                        <a href="" style="text-decoration: none;">
+                            <h3>Features</h3>
+                        </a>
+                    </div>
+                    <div class="footer-line1-third-content-line5" style="display: flex; flex-direction: row;">
+                        <img src="./icons/right-arrow.png"
+                            style="height: 25px; width: 25px; font-weight: bolder; margin-left: 110px; margin-top: 7px;">
+                        <a href="" style="text-decoration: none;">
+                            <h3>Review</h3>
+                        </a>
+                    </div>
+                    <div class="footer-line1-third-content-line6" style="display: flex; flex-direction: row;">
+                        <img src="./icons/right-arrow.png"
+                            style="height: 25px; width: 25px; font-weight: bolder; margin-left: 110px; margin-top: 7px;">
+                        <a href="" style="text-decoration: none;">
+                            <h3>Blogs</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line1-fourth">
+                <div class="footer-line1-fourth-head">
+                    <h2>Payment Methods</h2>
+                    <h3>Following Are Online Payment Methods.</h3>
+                </div>
+                <br>
+                <div class="footer-line1-fourth-cards" style="display: flex; flex-direction: row; column-gap: 6px;">
+                    <img src="./icons/visa.png" style="height: 35px; width: 40px;">
+                    <img src="./icons/credit-card.png" style="height: 40px; width: 45px; position: relative; bottom: 3px;">
+                    <img src="./icons/paypal.png" style="height: 40px; width: 50px;">
+                    <img src="./icons/discover.png" style="height: 40px; width: 50px;">
+                </div>
+                <h3>Cash On Delivery Also Availble.</h3>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./app.js"></script>
+
+</html>
